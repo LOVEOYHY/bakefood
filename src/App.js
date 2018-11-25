@@ -1,25 +1,44 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import MainContainer from '@pages/main/MainContainer'
+
+
+
+
+// import uuid from 'uuid'
+
+
+// import {
+//     FindIcon,
+//     FindIconActive,
+//     CourseIcon,
+//     CourseIconActive,
+//     ToolIcon,
+//     ToolIconActive,
+//     MineIcon,
+//     MineIconActive
+//   } from '@assets/images'
+
+
+
+
+
 
 class App extends Component {
+
+  // state = {
+  //     tabs: [
+  //         { id: uuid(), title: '发现', selected: 'find', component: <FindContainer />, icons: { default: FindIcon, active: FindIconActive } },
+  //         { id: uuid(), title: '课程', selected: 'course', component: <CourseContainer />, icons: { default: CourseIcon, active: CourseIconActive } },
+  //         { id: uuid(), title: '工具', selected: 'tool', component: <ToolContainer />, icons: { default: ToolIcon, active: ToolIconActive } },
+  //         { id: uuid(), title: '我的', selected: 'mine', component: <MineContainer />, icons: { default: MineIcon, active: MineIconActive } },
+  //     ]
+  // }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <MainContainer></MainContainer>
       </div>
     );
   }
